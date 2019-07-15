@@ -1,42 +1,257 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Rubik:300i,400,400i,500,700&display=swap');
 
-p {
-  font-family: 'Rubik', Arial, san-serif;
-  font-size: 0.8em;
-  font-weight: 400;
-  line-height: 1.5;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------------------------------body--------------------------------------------*/
+
+main, aside, footer {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header, nav, main, section, aside, footer, figure {
+    display: block;
+}
+
+
+main h1 {
+    margin: 2rem auto;
+}
+
+h1 {
+    color: #594200;
+}
+
+h2 {
+    color:#CA9500;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
+    color: #CA9500;
 }
 
-li {
-  display: inline;
+P {
+    margin: 1rem auto;
 }
 
 h1 {
   font-family: 'Rubik Mono One', Arial, san-serif;
-  font-size: 2.5em;
+  font-size: 2.5rem;
 }
 
 h2 {
   font-family: 'Rubik', Arial, san-serif;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 700;
+}
+
+.world_production {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+
+p, ul {
+  font-family: 'Rubik', Arial, san-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color:#594200;
+}
+
+/*--------------------------------------end_body--------------------------------------------*/
+
+
+/*--------------------------------------index_page--------------------------------------------*/
+
+.index_header {
+    background-color: #594200;
+}
+
+.index_title {
+    color: #FFBC00;
+    font-size: 6em;
+    text-align: center;
+}
+
+
+.index_image {
+    background-color: #594200;
+    display: block;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.main_caption {
+    color: #fff;
+    padding: 0.25rem;
+}
+
+
+
+.index_nav {
+    margin-bottom: 2rem;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+/*--------------------------------------end_index_page--------------------------------------------*/
+
+/*--------------------------------------navigation--------------------------------------------*/
+
+nav {
+    background-color:#594200;
+    text-align: center;
+    padding-top: 3rem;
+    }
+
+nav ul li > a {
+    color: #FFD767;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.75rem;
+}
+
+nav ul > li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Rubik', Arial, san-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-top: 0.5rem;
+    border-left: solid #594200 1px;
+    border-right: solid #594200 1px;
+    border-top: solid #594200 1px;
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+nav ul li:hover {
+    background-color: rgba(255,215,103,0.75); 
+}
+
+nav ul li a:hover {
+    color: rgba(89,66,0,0.75); 
+}
+
+nav ul li:active {
+    background-color: white;
+}
+
+nav ul li a:active {
+    color: #594200; 
+}
+
+/*--------------------------------------end_navigation--------------------------------------------*/
+
+/*--------------------------------------figure--------------------------------------------*/
+
+figcaption p {
+  font-family: 'Rubik', Arial, san-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0;
+}
+
+
+figure {
+    position: relative;
+}
+
+.attribution {
+    background-color: rgba(89,66,0,0.75);
+    color: #fff;
+    padding: 0.25rem;
+    position: absolute;
+    top: 0;
+}
+
+/*--------------------------------------end_figure--------------------------------------------*/
+
+/*--------------------------------------table--------------------------------------------*/
+
+table {
+  font-family: 'Rubik', Arial, san-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color:#594200;
+  border-collapse: collapse;
+}
+
+caption {
+    background-color: #594200;
+    color: white;
+    padding: 0.5rem;
+}
+
+thead {
+    background-color: #CA9500;
+}
+
+th {
+    padding: 0.5rem;
+}
+
+tfoot {
+    background-color: #594200;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+tbody tr :nth-child(even) {
+    text-align: center;
+}
+
+.odd_row {
+    background-color: #FFC727;
+}
+
+.even_row {
+    background-color: #FFD767;
+}
+
+
+
+/*--------------------------------------end_table--------------------------------------------*/
+
+/*--------------------------------------footer--------------------------------------------*/
+
+footer {
+    margin: 2rem auto;
+    border-top: 2px dotted #594200;
+    padding-top: 2rem;
 }
 
 footer > p {
   font-family: 'Rubik', Arial, san-serif;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 300;
   font-style: italic;
+  margin: 0;
 }
 
 footer p > a {
   font-family: 'Rubik', Arial, san-serif;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 400;
   font-style: italic;
 }
+
+/*--------------------------------------end_footer--------------------------------------------*/
+
