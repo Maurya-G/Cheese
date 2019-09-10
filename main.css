@@ -110,51 +110,47 @@ p, ul, h3 {
 /*--------------------------------------navigation--------------------------------------------*/
 
 nav {
-    background-color:#594200;
-    text-align: center;
-    padding-top: 3rem;
+        background-color:#594200;
+        text-align: center;
+        padding-top: 3rem;
+        border-bottom: solid 1px #ffffff;
     }
 
-nav ul li > a {
-    color: #FFD767;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.75rem;
-}
+    nav ul li > a {
+        color: #FFD767;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.75rem;
+    }
 
-nav ul > li {
-    display: inline-block;
-    text-transform: uppercase;
-    font-family: 'Rubik', Arial, san-serif;
-    font-size: 1.25rem;
-    font-weight: 500;
-    padding-top: 0.5rem;
-    border-left: solid #594200 1px;
-    border-right: solid #594200 1px;
-    border-top: solid #594200 1px;
-    -moz-border-radius-topleft: 5px;
-    -webkit-border-top-left-radius: 5px;
-    border-top-left-radius: 5px;
-    -moz-border-radius-topright: 5px;
-    -webkit-border-top-right-radius: 5px;
-    border-top-right-radius: 5px;
-}
+    nav ul > li {
+        background-color:#594200;
+        text-transform: uppercase;
+        font-family: 'Rubik', Arial, san-serif;
+        font-size: 1.25rem;
+        font-weight: 500;
+        padding-top: 0.5rem;
+        border-left: solid #594200 1px;
+        border-right: solid #594200 1px;
+        border-top: solid #594200 1px;
+    }
 
-nav ul li:hover {
-    background-color: rgba(255,215,103,0.75); 
-}
+    nav ul li:hover {
+        background-color: rgba(255,215,103,0.75); 
+    }
 
-nav ul li a:hover {
-    color: rgba(89,66,0,0.75); 
-}
+    nav ul li a:hover {
+        color: rgba(89,66,0,0.75); 
+    }
 
-nav ul li:active {
-    background-color: white;
-}
+    nav ul li:active {
+        background-color: white;
+    }
 
-nav ul li a:active {
-    color: #594200; 
-}
+    nav ul li a:active {
+        color: #594200; 
+    }
+
 
 
 /*--------------------------------------end_navigation--------------------------------------------*/
@@ -282,12 +278,43 @@ footer p > a {
         font-size: 4rem;
     }
     
+    
+    .hamburger-menu {
+        background-color: #594200;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .hamburger-menu span {
+        background:#FFBC00;
+        width: 25px;
+        height: 3px;
+        display: block;
+        margin-left: 1.5rem;
+        margin-bottom: 3px;
+    }
+    
+    #nav {
+        display: none;
+    }
+    
+    nav {
+        border-bottom: solid 1px #594200; 
+    }
+
+    
+
+    nav ul > li {
+        display: block;
+    }
+
+    
     .video {
         width: 100%;
     }
     
 
-    header, h2, p, footer {
+    header, h2, h3, p, footer {
         margin-left: 1.5rem;
         margin-right: 1.5rem;
     }
@@ -385,7 +412,34 @@ footer p > a {
         clear: both;
     }
     
+}
+
+@media screen and (min-width: 660px) {
     
+    .hamburger-menu {
+        display: none;
+    }
+    
+    #nav {
+        display: block;
+    }
+    
+    nav {
+        border-bottom: solid 1px #ffffff;
+    }
+
+    nav ul > li {
+        display: inline-block;
+        border-left: solid #594200 1px;
+        border-right: solid #594200 1px;
+        border-top: solid #594200 1px;
+        -moz-border-radius-topleft: 5px;
+        -webkit-border-top-left-radius: 5px;
+        border-top-left-radius: 5px;
+        -moz-border-radius-topright: 5px;
+        -webkit-border-top-right-radius: 5px;
+        border-top-right-radius: 5px;
+    }
     
     
 }
@@ -524,7 +578,7 @@ footer p > a {
 
 @media screen and (min-width: 950px) {
     
-    header, h2, p {
+    header, h2, h3, p {
         margin-left: 0;
         margin-right: 0; 
     }
